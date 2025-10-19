@@ -4,14 +4,14 @@
 Un exemple d'entraînement spécifique du modèle YOLO pour la détection de poissons dans un aquarium.  
   
 #### Besoin  
-Dans mon aquarium, j’ai 11 poissons, mais ici on se concentre sur 5 jeunes [scalaires](https://www.fishipedia.fr/fr/poissons/pterophyllum-scalare)
+Dans mon aquarium, j’ai 11 poissons, dont 5 jeunes [scalaires](https://www.fishipedia.fr/fr/poissons/pterophyllum-scalare)
 
-Ces poissons formeront bientôt des couples et défendront leurs territoires.  
+Ces scalaires formeront bientôt des couples et défendront leurs territoires.  
 Or, je ne peux pas assurer une surveillance quotidienne. Il me faut une solution automatisée.
   
 Par surveillance, j’entends uniquement :  
-1. M’assurer de l’état de santé des poissons. La médecine des poissons étant peu développée, je me contenterai d’un statut mort/vivant.  
-2. Observer le comportement des poissons pour répondre à la question : *des couples se forment-ils ?*
+1. M’assurer de l’état de santé des 11 poissons. La médecine des poissons étant peu développée, je me contenterai d’un statut mort/vivant.  
+2. Observer le comportement des scalaires pour répondre à la question : *des couples se forment-ils ?*
   
 #### Solution métier
 Pour s’assurer visuellement de l’état de santé d’un poisson, il faut détecter sa présence avec un haut niveau de certitude.  
@@ -21,7 +21,7 @@ On peut affiner avec :
 - un poisson qui flotte à la surface,  
 - ou, à l’inverse, qui reste au fond.  
   
-Pour constater la formation de couples, il faut détecter la localisation des poissons avec précision.
+Pour constater la formation de couples, il faut détecter la localisation des scalaires avec précision.
 C’est cette précision qui déterminera la qualité du rendu.
 
 #### Solution technique
@@ -41,10 +41,10 @@ Puis j'ai entraîné YOLOv8m spécifiquement sur ce dataset jusqu'au surapprenti
 
 Avec ce premier modèle, j'ai pu pré-labelliser les images et ainsi gagner beaucoup de temps.
 
-J'ai maintenant 1 500 images contenant entre X et X labels par classe de scalaires.
+J'ai maintenant 1 500 images contenant entre X et X labels par classe.
+Plus précisément, concernant les scalaires, il y a entre x et x labels par classe.
 
 #### Entraînement
-
 
 #### Bilan
 
@@ -59,8 +59,6 @@ L’évaluation de l’état de santé repose sur la détection de la présence 
 Cette observation peut être affinée en considérant :  
 - un poisson qui flotte à la surface,  
 - ou, au contraire, qui reste immobile au fond de l'aquarium.
-  
+
 ###### Heavy lift
-
-
-
+Augmenter le nombre d'images du dataset. 1500 images, c'est trop peu.
