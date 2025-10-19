@@ -4,7 +4,7 @@
 Un exemple d'entraînement spécifique du modèle YOLO pour la détection de poissons dans un aquarium.  
   
 #### Besoin  
-Dans mon aquarium, j’ai 11 poissons, mais ici on se concentre sur 5 jeunes scalaires. (cf. https://www.fishipedia.fr/fr/poissons/pterophyllum-scalare)
+Dans mon aquarium, j’ai 11 poissons, mais ici on se concentre sur 5 jeunes [scalaires](https://www.fishipedia.fr/fr/poissons/pterophyllum-scalare)
 
 Ces poissons formeront bientôt des couples et défendront leurs territoires.  
 Or, je ne peux pas assurer une surveillance quotidienne. Il me faut une solution automatisée.
@@ -35,7 +35,16 @@ La caméra que j'utilise filme en 720p à 30 fps.
 Les images sont prises face à l'aquarium, pendant la plage horaire d'éclairage (15h - 21h30).  
 Pour entraîner au mieux le modèle, j'ai utilisé la même caméra, disposée de la même manière pour les images d'entraînement que pour la surveillance réelle.
 
+Pour créer le dataset, j'ai utilisé [Label Studio](https://labelstud.io/).  
+Dans un premier temps, j'ai labellisé manuellement 500 images.  
+Puis j'ai entraîné YOLOv8m spécifiquement sur ce dataset jusqu'au surapprentissage.
+
+Avec ce premier modèle, j'ai pu pré-labelliser les images et ainsi gagner beaucoup de temps.
+
+J'ai maintenant 1 500 images contenant entre X et X labels par classe de scalaires.
+
 #### Entraînement
+
 
 #### Bilan
 
