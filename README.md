@@ -4,7 +4,8 @@
 Un exemple d'entraînement spécifique du modèle YOLO pour la détection de poissons dans un aquarium.  
   
 #### Besoin  
-Dans mon aquarium, j’ai 11 poissons, mais ici on se concentre sur 5 jeunes scalaires.  
+Dans mon aquarium, j’ai 11 poissons, mais ici on se concentre sur 5 jeunes scalaires. (cf. https://www.fishipedia.fr/fr/poissons/pterophyllum-scalare)
+
 Ces poissons formeront bientôt des couples et défendront leurs territoires.  
 Or, je ne peux pas assurer une surveillance quotidienne.  
   
@@ -24,6 +25,10 @@ Pour constater la formation de couples, il faut détecter la localisation des po
 C’est cette précision qui déterminera la qualité du rendu.
 
 #### Capture d'images et dataset
+La caméra que j'utilise filme en 720p à 30 fps.
+
+Les images sont prises face à l'aquarium, pendant la plage horaire d'éclairage (15h - 21h30).  
+Pour entraîner au mieux le modèle, j'ai utilisé la même caméra, disposée de la même manière pour les images d'entraînement que pour la surveillance réelle.
 
 #### Entraînement
 
@@ -42,3 +47,6 @@ Cette observation peut être affinée en considérant :
 - ou, au contraire, qui reste immobile au fond de l'aquarium.
   
 ###### Heavy lift
+
+
+
