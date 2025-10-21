@@ -56,6 +56,7 @@ Avant entrainement:
 Après entrainement:
 
 ![exemple](https://github.com/user-attachments/assets/0ee5edc1-eca1-4efb-9a00-dd727593a5ca)
+
 Nota bene: la classe Corydoras_Panda est mal nommée. Elle englobe en réalité deux Corydoras dont j'ai oublié l'espèce exacte.
 
 #### Forces
