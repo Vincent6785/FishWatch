@@ -67,4 +67,4 @@ Cette observation peut être affinée en considérant :
 ###### Heavy lift
 Augmenter le nombre d'images du dataset. 1500 images, c'est trop peu.
 
-Changer d'approche et entrainer un modèle pour reconnaitre une espece et non un individus. On perdrais en finesse mais gagnerais en adaptabilité à divers aquarium.
+Changer d'approche et entrainer un modèle pour reconnaitre une espece et non un individu. On perdrait en finesse mais gagnerait en adaptabilité en cas de changement d'aquarium.
