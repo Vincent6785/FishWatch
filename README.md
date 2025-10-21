@@ -42,6 +42,11 @@ J'ai maintenant 1 500 images contenant entre 330 et 1480 labels par classe.
 Plus précisément, concernant les scalaires, il y a entre 385 et 1468 labels par classe.
 
 #### Entraînement
+L’entraînement a été réalisé sur 1 500 images réparties selon un ratio 80/20 entre l’entraînement et la validation.
+Le modèle a été entraîné pendant 300 époques avec un batch size de 8 et une résolution d’entrée de 1024×1024.
+L’entraînement s’est appuyé sur un optimiseur automatique, un early stopping avec une patience de 20 époques, et des augmentations de données telles que la translation, l’échelle, le flip horizontal et l’auto-augmentation (RandAugment).
+Les performances ont été évaluées à chaque époque sur le jeu de validation, et le meilleur modèle a été sauvegardé sous : runs/detect/train208/weights/best.pt.
+
 <img width="1134" height="963" alt="Capture d'écran 2025-10-18 124402" src="https://github.com/user-attachments/assets/52eea95d-dd95-41f6-9205-0c5f71716f3b" />
 
 #### Bilan

@@ -1,0 +1,5 @@
+train: C:\Users\vince\Documents\aqua\backend\joli_1500\splits\80-20\images\train
+val: C:\Users\vince\Documents\aqua\backend\joli_1500\splits\80-20\images\val
+
+nc: 11
+names: [ "Ancistrus", "Botia_Almorhae", "Botia_Striata", "Corydoras_Albinos", "Corydoras_Panda", "G_Matriarche", "Pterophyllum_Scalare_B", "Pterophyllum_Scalare_BB", "Pterophyllum_Scalare_W", "Pterophyllum_Scalare_Y", "Pterophyllum_Scalare_YWB" ]

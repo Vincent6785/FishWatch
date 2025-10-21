@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Ancistrus"
+    },
+    {
+      "id": 1,
+      "name": "Botia_Almorhae"
+    },
+    {
+      "id": 2,
+      "name": "Botia_Striata"
+    },
+    {
+      "id": 3,
+      "name": "Corydoras_Albinos"
+    },
+    {
+      "id": 4,
+      "name": "Corydoras_Panda"
+    },
+    {
+      "id": 5,
+      "name": "G_Matriarche"
+    },
+    {
+      "id": 6,
+      "name": "Pterophyllum_Scalare_B"
+    },
+    {
+      "id": 7,
+      "name": "Pterophyllum_Scalare_BB"
+    },
+    {
+      "id": 8,
+      "name": "Pterophyllum_Scalare_W"
+    },
+    {
+      "id": 9,
+      "name": "Pterophyllum_Scalare_Y"
+    },
+    {
+      "id": 10,
+      "name": "Pterophyllum_Scalare_YWB"
+    }
+  ],
+  "info": {
+    "year": 2025,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
