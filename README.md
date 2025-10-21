@@ -41,12 +41,19 @@ Puis j'ai entraîné YOLOv8m spécifiquement sur ce dataset jusqu'au surapprenti
 
 Avec ce premier modèle, j'ai pu pré-labelliser les images et ainsi gagner beaucoup de temps.
 
-J'ai maintenant 1 500 images contenant entre X et X labels par classe.
-Plus précisément, concernant les scalaires, il y a entre x et x labels par classe.
+J'ai maintenant 1 500 images contenant entre 330 et 1480 labels par classe.
+Plus précisément, concernant les scalaires, il y a entre 385 et 1468 labels par classe.
 
 #### Entraînement
+<img width="1134" height="963" alt="Capture d'écran 2025-10-18 124402" src="https://github.com/user-attachments/assets/52eea95d-dd95-41f6-9205-0c5f71716f3b" />
 
 #### Bilan
+Avant entrainement
+<img width="646" height="430" alt="Capture d'écran 2025-10-18 122941" src="https://github.com/user-attachments/assets/13d29d7a-8c24-4c6e-8599-86e1da1057dd" />
+<img width="604" height="498" alt="Capture d'écran 2025-10-18 122835" src="https://github.com/user-attachments/assets/8c037b06-e1b8-497e-8231-2d4fe55b64ba" />
+
+Après entrainement
+![exemple](https://github.com/user-attachments/assets/0ee5edc1-eca1-4efb-9a00-dd727593a5ca)
 
 #### Forces
 
