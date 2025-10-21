@@ -16,10 +16,7 @@ Par surveillance, j’entends uniquement :
 #### Solution métier
 Pour s’assurer visuellement de l’état de santé d’un poisson, il faut détecter sa présence avec un haut niveau de certitude.  
 Un poisson mort disparaît souvent en moins de 48 heures.  
-La présence est donc un premier indicateur de santé.  
-On peut affiner avec :  
-- un poisson qui flotte à la surface,  
-- ou, à l’inverse, qui reste au fond.  
+La présence est donc un premier indicateur de santé. 
   
 Pour constater la formation de couples, il faut détecter la localisation des scalaires avec précision.
 C’est cette précision qui déterminera la qualité du rendu.
