@@ -59,10 +59,6 @@ Après entrainement:
 
 Nota bene: la classe Corydoras_Panda est mal nommée. Elle englobe en réalité deux Corydoras dont j'ai oublié l'espèce exacte.
 
-#### Forces
-
-#### Faiblesses
-
 #### Axes d'amélioration
   
 ###### Quick win
@@ -73,3 +69,5 @@ Cette observation peut être affinée en considérant :
 
 ###### Heavy lift
 Augmenter le nombre d'images du dataset. 1500 images, c'est trop peu.
+
+Changer d'approche et entrainer un model pour reconnaitre une espece et non un individus. On perdrais en finesse mais gagnerais en adaptabilité à divers aquarium.
