@@ -1,0 +1,49 @@
+name: Run main - analyse videos
+
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev]
+
+jobs:
+  test-reports:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install ultralytics opencv-python pandas matplotlib tqdm pynvml numpy
+
+      - name: Run main script (skip detection)
+        run: |
+          python main.py
+
+      - name: Check generated reports
+        run: |
+          ls -lh report_validation/
+          test -f report_validation/merged_detections.csv
+          test -f report_validation/activity_periods.csv
+          test -f report_validation/gantt_total.png
+          test -f report_validation/gantt_half_1.png
+          test -f report_validation/gantt_half_2.png
+          test -f report_validation/gantt_quarter_1.png
+          test -f report_validation/gantt_quarter_2.png
+          test -f report_validation/gantt_quarter_3.png
+          test -f report_validation/gantt_quarter_4.png
+          test -f report_validation/scalar_pair_50px.csv
+          test -f report_validation/scalar_pair_100px.csv
+          test -f report_validation/scalar_pair_275px.csv
+          test -f report_validation/scalar_pair_top10_50px.png
+          test -f report_validation/scalar_pair_top10_100px.png
+          test -f report_validation/scalar_pair_top10_275px.png
