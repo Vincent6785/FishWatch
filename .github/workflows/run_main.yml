@@ -31,7 +31,7 @@ jobs:
 
       - name: Check generated reports
         run: |
-          ls -lh reports/
+          ls -lh report_validation/
           test -f report_validation/merged_detections.csv
           test -f report_validation/activity_periods.csv
           test -f report_validation/gantt_total.png
