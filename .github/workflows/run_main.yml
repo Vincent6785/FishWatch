@@ -32,9 +32,18 @@ jobs:
       - name: Check generated reports
         run: |
           ls -lh reports/
-          test -f reports/merged_detections.csv
-          test -f reports/activity_periods.csv
-          test -f reports/gantt_total.png
-          test -f reports/gantt_half_1.png
-          test -f reports/gantt_half_2.png
-          test -f reports/gantt_quarter_1.png
+          test -f report_validation/merged_detections.csv
+          test -f report_validation/activity_periods.csv
+          test -f report_validation/gantt_total.png
+          test -f report_validation/gantt_half_1.png
+          test -f report_validation/gantt_half_2.png
+          test -f report_validation/gantt_quarter_1.png
+          test -f report_validation/gantt_quarter_2.png
+          test -f report_validation/gantt_quarter_3.png
+          test -f report_validation/gantt_quarter_4.png
+          test -f report_validation/scalar_pair_50px.csv
+          test -f report_validation/scalar_pair_100px.csv
+          test -f report_validation/scalar_pair_275px.csv
+          test -f report_validation/scalar_pair_top10_50px.png
+          test -f report_validation/scalar_pair_top10_100px.png
+          test -f report_validation/scalar_pair_top10_275px.png

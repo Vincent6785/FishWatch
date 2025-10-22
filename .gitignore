@@ -1,3 +1,17 @@
+report_validation/gantt_total.png
+report_validation/gantt_half_1.png
+report_validation/gantt_half_2.png
+report_validation/gantt_quarter_1.png
+report_validation/gantt_quarter_2.png
+report_validation/gantt_quarter_3.png
+report_validation/gantt_quarter_4.png
+report_validation/scalar_pair_50px.csv
+report_validation/scalar_pair_100px.csv
+report_validation/scalar_pair_275px.csv
+report_validation/scalar_pair_top10_50px.png
+report_validation/scalar_pair_top10_100px.png
+report_validation/scalar_pair_top10_275px.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
